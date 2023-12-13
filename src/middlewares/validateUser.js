@@ -10,7 +10,7 @@ const validateUser = (req, res, next) => {
   const { firstname, lastname, email } = req.body;
 
   const { error } = userSchema.validate(
-    { firstname, lastname, email },
+    { firstname, lastname, email, city, language },
     { abortEarly: false }
   );
 
